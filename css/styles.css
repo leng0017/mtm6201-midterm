@@ -1,3 +1,4 @@
+@media screen and (min-width: 960px) {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -47,10 +48,10 @@ body {
   
   .mood .title { 
     color: #51FCA5;
-    font-size: 36px;
+    font-size: 50px;
   }
   
-  .mood .subtitle { 
+  .mood  p { 
     color: #E6DE55;
   }
 
@@ -64,4 +65,104 @@ body {
     height: auto;
   }
   
+
+  .events {
+    position: relative;
+    width: 100%;
+  }
   
+  .events .background-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .events .content {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 10%;
+    text-align: center;
+    width: 60%;
+    left: 20%;
+    top: 15%;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  
+  .events h1 {
+    color: #4E64F2;
+    font-size: 50px;
+  }
+  
+  .events p {
+    color: #E6DE55;
+  }
+  
+  .events .content .button {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .events .content .button img {
+    width: 200px; 
+    height: auto;
+  }
+
+  footer {
+    background-color: #585858;
+    padding: 20px 0;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content h3, .footer-content p {
+    margin: 10px 0;
+}
+
+header img {
+  transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.2);
+}
+
+.button img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.button img:hover {
+  transform: scale(1.1);
+}
+}
+
+@media screen and (max-width: 959px) {
+  
+  .mood .content,
+  .events .content {
+      width: 80%;
+      left: 10%;
+      padding: 5%;
+  }
+
+  .mood .title, 
+  .events h1 {
+      font-size: 30px;
+  }
+
+  .button img {
+      width: 150px;
+  }
+
+  header img {
+      width: 80px;
+  }
+
+  header nav a {
+      margin-left: 10px;
+  }
+}
