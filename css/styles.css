@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #585858;
+  }
+  
+  header img {
+    width: 120px;
+  }
+  
+  header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mood {
+    position: relative;
+    width: 100%;
+  }
+  
+  .mood img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .mood .content {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 10%;
+    text-align: center;
+    width: 60%;
+    left: 20%;
+    top: 15%;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  
+  .mood .title { 
+    color: #51FCA5;
+    font-size: 36px;
+  }
+  
+  .mood .subtitle { 
+    color: #E6DE55;
+  }
+
+  .mood .content .button {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .mood .content .button img {
+    width: 200px; 
+    height: auto;
+  }
+  
+  
