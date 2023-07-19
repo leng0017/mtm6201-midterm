@@ -141,28 +141,143 @@ header img:hover {
 }
 
 @media screen and (max-width: 959px) {
-  
-  .mood .content,
-  .events .content {
-      width: 80%;
-      left: 10%;
-      padding: 5%;
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
   }
 
-  .mood .title, 
-  .events h1 {
-      font-size: 30px;
-  }
-
-  .button img {
-      width: 150px;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #585858;
   }
 
   header img {
-      width: 80px;
+    width: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  header img:hover {
+    transform: scale(1.2);
   }
 
   header nav a {
-      margin-left: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mood {
+    position: relative;
+    width: 100%;
+  }
+
+  .mood img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mood .content {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    top: 15%;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+
+  .mood .title { 
+    color: #51FCA5;
+    font-size: 25px;
+  }
+
+  .mood p { 
+    color: #E6DE55;
+  }
+
+  .mood .content .button {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .mood .content .button img {
+    width: 100px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mood .content .button img:hover {
+    transform: scale(1.1);
+  }
+
+  .events {
+    position: relative;
+    width: 100%;
+  }
+
+  .events .background-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .events .content {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    top: 15%;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+
+  .events h1 {
+    color: #4E64F2;
+    font-size: 25px;
+  }
+
+  .events p {
+    color: #E6DE55;
+  }
+
+  .events .content .button {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .events .content .button img {
+    width: 100px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .events .content .button img:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    background-color: #585858;
+    padding: 10px 0;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-content h3, .footer-content p {
+    margin: 10px 0;
   }
 }
